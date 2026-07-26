@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Vikesh Kumar Singh</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <figure class="profile-img">
+                    <img src="assets/images/profile.png" alt="Vikesh Kumar Singh">
+                </figure>
+                <div class="profile-info">
+                    <h1>Vikesh Kumar Singh</h1>
+                    <p>Data Analyst</p>
+                </div>
+                <button class="btn-contacts" id="showContactsBtn">Show Contacts</button>
+                <div class="contacts-hidden" id="contactsBox">
+                    <p><strong>Email:</strong> <a href="mailto:Vikeshsingh0604@gmail.com">Vikeshsingh0604@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+917428285636">+91-7428285636</a></p>
+                    <p><a href="https://github.com/vikeshsingh0604" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+                    <p><a href="https://www.linkedin.com/in/singhvikesh0604/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Navigation -->
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">About</a></li>
+                    <li><a href="index.html" class="nav-link">Experience</a></li>
+                    <li><a href="index.html" class="nav-link">Resume</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Contact Section -->
+            <article class="content-section active">
+                <h2>Contact</h2>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:Vikeshsingh0604@gmail.com">Vikeshsingh0604@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+917428285636">+91-7428285636</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Haryana, India</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Connect</h4>
+                            <div class="social-links">
+                                <a href="https://github.com/vikeshsingh0604" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/singhvikesh0604/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h3>Get in Touch</h3>
+                    <p>Feel free to reach out to me for any queries or opportunities. I'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Full Name" required id="fullName">
+                            <input type="email" placeholder="Your Email Address" required id="email">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required id="subject">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="6" required id="message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
