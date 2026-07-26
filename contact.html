@@ -101,14 +101,19 @@
                     <form action="https://formsubmit.co/vikeshsingh0604@gmail.com" method="POST">
     
                         <!-- Honeypot (Spam bots ko rokne ke liye ek hidden field, optional but recommended) -->
-                        <input type="text" name="_honey" style="display:none">
+                        <div class="form-group">
+                            <input type="text" name="_honey" style="display:none">
+                        </div>
 
                         <!-- Disable Captcha (Agar aapko form submit karne ke baad captcha nahi chahiye) -->
+                        <div class="form-group">
                         <input type="hidden" name="_captcha" value="false">
-
+                        </div>
                         <!-- Success Page (Submit hone ke baad user ko wapas isi page par laane ke liye) -->
+                        <div class="form-group">
                         <input type="hidden" name="_next" value="https://vikeshsingh0604.github.io/Port_folio/contact.html">
-
+                        </div>
+                    
                         <!-- <input type="text" name="name" placeholder="Your Full Name" required>
                         <input type="email" name="email" placeholder="Your Email Address" required>
 
