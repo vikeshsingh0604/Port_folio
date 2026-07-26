@@ -98,33 +98,26 @@
                     <p>Feel free to reach out to me for any queries or opportunities. I'll get back to you as soon as possible.</p>
                     
 
-                    <form id="contactForm" class="contact-form" action="https://formsubmit.co/vikeshsingh0604@gmail.com" method="POST">
-    
-                        <!-- Honeypot (Spam bots ko rokne ke liye ek hidden field, optional but recommended) -->
-                        <div class="form-group">
-                            <input type="text" name="_honey" style="display:none">
-                        </div>
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/aapka.email@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Full Name" required id="fullName">
+                        <input type="email" name="email" placeholder="Your Email Address" required id="email">
+                    </div>
 
-                        <!-- Disable Captcha (Agar aapko form submit karne ke baad captcha nahi chahiye) -->
-                        <div class="form-group">
-                        <input type="hidden" name="_captcha" value="false">
-                        </div>
-                        <!-- Success Page (Submit hone ke baad user ko wapas isi page par laane ke liye) -->
-                        <div class="form-group">
-                        <input type="hidden" name="_next" value="https://vikeshsingh0604.github.io/Port_folio/contact.html">
-                        </div>
-                    
-                        <!-- <input type="text" name="name" placeholder="Your Full Name" required>
-                        <input type="email" name="email" placeholder="Your Email Address" required>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required id="subject">
+                    </div>
 
-                        <input type="text" name="subject" placeholder="Subject" required>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="6" required id="message"></textarea>
+                    </div>
 
-                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
 
-                        <button type="submit">Send Message</button>
-                    </form> -->
-
-                    <!-- <form id="contactForm" class="contact-form"> -->
+                    <!-- <form id="contactForm" class="contact-form">
                         <div class="form-group">
                             <input type="text" placeholder="Your Full Name" required id="fullName">
                             <input type="email" placeholder="Your Email Address" required id="email">
@@ -141,7 +134,7 @@
                         <button type="submit" class="btn-submit">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
-                    </form>
+                    </form> -->
 
                     <div id="formMessage" class="form-message"></div>
                 </div>
