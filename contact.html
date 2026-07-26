@@ -99,6 +99,13 @@
                     
 
                 <form id="contactForm" class="contact-form" action="https://formsubmit.co/vikeshsingh0604@gmail.com" method="POST">
+                   
+                    <!-- 1. Wapas portfolio par aane ke liye Redirect URL -->
+                    <input type="hidden" name="_next" value="https://vikeshsingh0604.github.io/Port_folio/contact.html">
+    
+                    <!-- 2. Captcha verification hatane ke liye (Optional par smooth experience ke liye best) -->
+                    <input type="hidden" name="_captcha" value="false">
+
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Your Full Name" required id="fullName">
                         <input type="email" name="email" placeholder="Your Email Address" required id="email">
